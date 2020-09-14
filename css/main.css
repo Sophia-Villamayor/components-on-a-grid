@@ -16,3 +16,27 @@ header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
+
+body {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.banner img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.logo h1 {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
