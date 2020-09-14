@@ -54,6 +54,8 @@ figure {
 }
 
 .logo {
+  display: grid;
+  align-items: flex-end;
   width: 14rem;
   grid-column: 1;
   grid-row: 2;
